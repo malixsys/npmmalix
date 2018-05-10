@@ -1,0 +1,67 @@
+{
+  "name": "malix",
+  "version": "1.0.0",
+  "description": "malix resume",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malixsys/npmmalix.git"
+  },
+  "bin": {
+    "malix": "./index.js"
+  },
+  "keywords": [
+    "resume",
+    "malix"
+  ],
+  "prettier": {
+    "printWidth": 150,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.json",
+        "options": {
+          "tabWidth": 2
+        }
+      },
+      {
+        "files": "*.css",
+        "options": {
+          "tabWidth": 2
+        }
+      }
+    ]
+  },
+  "author": "malixsys",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/malixsys/npmmalix/issues"
+  },
+  "homepage": "https://github.com/malixsys/npmmalix#readme",
+  "dependencies": {
+    "@octokit/rest": "^15.4.0",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^3.1.2",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.2.0",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "opn": "^5.3.0",
+    "simple-git": "^1.92.0",
+    "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-plugin-auto-import": "^0.1.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.12.1"
+  },
+  "scripts": {
+    "lint": "eslint . --quiet --fix -c .eslintrc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
